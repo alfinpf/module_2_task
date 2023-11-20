@@ -1,7 +1,6 @@
 
 function formSubmit(f){
     f.preventDefault();
-    console.log("Customer Login Success");
     let userEmail = document.getElementById("userEmail").value;
     let userPassword = document.getElementById("userPassword").value;
 
@@ -24,6 +23,7 @@ function formSubmit(f){
         userPasswordError.innerHTML = "";
         userPasswordError.style.display = 'none';
     }
+    console.log("Customer Login Success");
     console.log("Email ID:",userEmail);
     console.log("Password:",userPassword);
     if(!alert("Login Successful")){window.location.reload();}

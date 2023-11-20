@@ -1,7 +1,7 @@
 
 function formSubmit(e){
     e.preventDefault();
-    console.log("New Account Creation Success");
+
     let userFullName = document.getElementById("userFullName").value;
     let userEmail = document.getElementById("userEmail").value;
     let userPassword = document.getElementById("userPassword").value;
@@ -48,7 +48,8 @@ function formSubmit(e){
         userAddressError.innerHTML = "";
         userAddressError.style.display = 'none';  
     }
-
+    
+    console.log("New Account Creation Success");
     console.log("Full Name:",userFullName);
     console.log("Email ID:",userEmail);
     console.log("Password:",userPassword);
