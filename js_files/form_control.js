@@ -1,7 +1,7 @@
 
 function formSubmit(e){
     e.preventDefault();
-    console.log("Form submitted successfully");
+    console.log("New Account Creation Success");
     let userFullName = document.getElementById("userFullName").value;
     let userEmail = document.getElementById("userEmail").value;
     let userPassword = document.getElementById("userPassword").value;
