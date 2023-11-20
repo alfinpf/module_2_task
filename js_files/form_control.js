@@ -1,7 +1,6 @@
 
 function formSubmit(e){
     e.preventDefault();
-
     let userFullName = document.getElementById("userFullName").value;
     let userEmail = document.getElementById("userEmail").value;
     let userPassword = document.getElementById("userPassword").value;
