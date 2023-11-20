@@ -72,12 +72,15 @@
         <div class="mb-3">
           <label for="userEmail" class="form-label">* E-mail ID :</label>
           <input type="email" class="form-control" id="userEmail" placeholder="Enter your e-mail ID"
-            name="userEmail required" required>
+            name="userEmail">
+            <span id="userEmailError" style="display: none; color: red;"></span>
         </div>
+
         <div class="mb-3">
           <label for="userPassword" class="form-label">* Password :</label>
-          <input type="password" minlength="8" maxlength="16" class="form-control" id="userPassword"
-            placeholder="Enter your password" required>
+          <input type="password" class="form-control" id="userPassword"
+            placeholder="Enter your password">
+            <span id="userPasswordError" style="display: none; color: red;"></span>
         </div>
         <div class="mb-3">
           <button class="btn btn-primary">Submit</button>

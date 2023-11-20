@@ -13,7 +13,8 @@
 
 <body class="toppad125">
   <!--Navigation bar starts-->
-  <nav class="navbar navbar-expand-lg bg-warning-subtle fixed-top" style=" border-bottom: solid 1px rgb(237, 199, 122);">
+  <nav class="navbar navbar-expand-lg bg-warning-subtle fixed-top"
+    style=" border-bottom: solid 1px rgb(237, 199, 122);">
     <div class="container-fluid">
       <a class="navbar-brand" href="../index.html"><img style="max-width: 125px;" src="../images/icons/logo.webp"></a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
@@ -41,7 +42,7 @@
         <ul class="navbar-nav mb-2 mb-lg-0">
           <li class="nav-item myNavbarOptionActive">
             <a class="nav-link" href="../html_files/my_account.html">MY ACCOUNT</a>
-        </li>
+          </li>
           <li class="nav-item">
             <a class="nav-link" href="../html_files/about.html">ABOUT</a>
           </li>
@@ -55,40 +56,47 @@
 
     <div style="width: 300px; margin-left: auto; margin-right: auto; padding-bottom: 25px; padding-top: 15px;">
 
-      <h3 style="background-color: rgb(237, 199, 122); padding-top: 10px; padding-bottom: 10px; padding-left: 20px; padding-right: 15px;">
+      <h3
+        style="background-color: rgb(237, 199, 122); padding-top: 10px; padding-bottom: 10px; padding-left: 20px; padding-right: 15px;">
         Create a New Account
       </h3>
 
-      <br/>
+      <br />
 
       <h5 class>
         Please enter your details and submit.
       </h5>
 
-      <br/>
+      <br />
 
       <form onsubmit="formSubmit(event);">
 
         <div class="mb-3">
           <label for="userFullName" class="form-label">* Full Name :</label>
-          <input type="text" minlength="3" maxlength="35" class="form-control" id="userFullName"
-            placeholder="Enter your full name" name="fullName" required>
+          <input type="text" class="form-control" id="userFullName" placeholder="Enter your full name" name="fullName">
+          <span id="userFullNameError" style="display: none; color: red;"></span>
         </div>
+
         <div class="mb-3">
           <label for="userEmail" class="form-label">* E-mail address :</label>
           <input type="email" class="form-control" id="userEmail" placeholder="Enter your e-mail ID"
-            name="userEmail required" required>
+            name="userEmail required">
+          <span id="userEmailError" style="display: none; color: red;"></span>
         </div>
+
         <div class="mb-3">
           <label for="userPassword" class="form-label">* Password :</label>
-          <input type="password" minlength="8" maxlength="16" class="form-control" id="userPassword"
-            placeholder="Enter your password" required>
+          <input type="password" class="form-control" id="userPassword" placeholder="Enter your password">
+          <span id="userPasswordError" style="display: none; color: red;"></span>
         </div>
+
         <div class="mb-3">
           <label for="userAddress" class="form-label">* Address :</label>
-          <textarea class="form-control" minlength="25" maxlength="75" id="userAddress"
-            placeholder="Area, Street, Town/City, State, County, PIN" rows="3" required></textarea>
+          <textarea class="form-control" id="userAddress" placeholder="Area, Street, Town/City, State, County, PIN"
+            rows="3"></textarea>
+          <span id="userAddressError" style="display: none; color: red;"></span>
         </div>
+
         <div class="mb-3">
           <button class="btn btn-primary">Submit</button>
         </div>
@@ -96,8 +104,6 @@
       </form>
 
     </div>
-
-
 
   </div>
 
@@ -108,4 +114,5 @@
     crossorigin="anonymous"></script>
 
 </body>
+
 </html>
