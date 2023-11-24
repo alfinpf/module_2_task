@@ -26,6 +26,6 @@ function formSubmit(f){
     console.log("Customer Login Success");
     console.log("Email ID:",userEmail);
     console.log("Password:",userPassword);
-    if(!alert("Login Successful")){window.location.reload();}
+    if(!alert("Login Successful !")){window.location.reload();}
 }
 
